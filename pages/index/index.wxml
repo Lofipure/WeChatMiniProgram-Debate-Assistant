@@ -1,0 +1,25 @@
+<view class="content">
+  <view class="title" bindtap="actionSheetTap">{{title}}</view>
+  <view class="time">
+    <view class="first">{{leftTime}}秒</view>
+    <view class="second">{{rightTime}}秒</view>
+  </view>
+  <view class="btnGroup">
+    <button class="btn" bindtap="leftStart">正方发言</button>
+    <button class="btn" bindtap="rightStart">反方发言</button>
+  </view>
+  <view class="desc">
+    <view class="desc-title"><text>规则解读</text></view>
+    <view class="desc-content"><text>{{desc}}</text></view>
+  </view>
+  <!-- 循环播放 -->
+  <audio src="{{src}}" action="{{action}}" loop></audio>
+  <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+    <block wx:for="{{actionSheetItems}}">
+      <action-sheet-item class="item" bindtap="bindItemTap" id="{{item.id}}">
+        {{item.name}}
+      </action-sheet-item>
+    </block>
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+  </action-sheet>
+</view>

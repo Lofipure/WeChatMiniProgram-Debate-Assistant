@@ -1,0 +1,19 @@
+page{
+  color: #000;
+}
+.section-title{
+  font-size: 20px;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.voice{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.voice label{
+  margin-left:10px;
+}
+.box {
+  border: 1px solid #B8B8B8;
+  padding: 0 10px;
+}

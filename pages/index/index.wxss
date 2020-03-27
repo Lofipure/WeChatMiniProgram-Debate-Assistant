@@ -1,0 +1,31 @@
+.title{
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+}
+.btnGroup{
+  display: flex;
+}
+.desc {
+  margin-top: 50px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+.desc-title {
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+.desc-content {
+  font-size: 30rpx;
+  text-align: center;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+}
