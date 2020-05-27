@@ -1,26 +1,30 @@
 <view class="content">
     <view class="box">
+        <view class="section-title">辩论赛题目</view>
+        <input type="text" id="input-title" placeholder="请输入本次比赛的辩题" bindinput="inputChange"></input>
+    </view>
+    <view class="box">
         <view class="section-title">
             立论阶段
-            <switch id="config1" class="pull-right" checked bindchange="switchChange" />
+            <switch id="config1" class="pull-right" checked bindchange="switchChange" color="rgb(244,189,0)"/>
         </view>
         <view>
             <text>时间限制（秒）</text>
-            <slider id="config1" bindchange="sliderChange" show-value min="10" max="360" value="{{configs.config1.time}}" />
+            <input type="number" value="{{configs.config1.time}}" bindinput="configInputChage" id="config1" class="inputTime"></input>
         </view>
         <view>
             <text>声音提醒</text>
             <radio-group id="config1" class="voice" bindchange="radioChange">
                 <label>
-                    <radio value="15" checked />
+                    <radio value="15" color="rgb(244,189,0)"/>
                     15秒
                 </label>
                 <label>
-                    <radio value="10" />
+                    <radio value="10" checked="true"color="rgb(244,189,0)"/>
                     10秒
                 </label>
                 <label>
-                    <radio value="5" />
+                    <radio value="5" color="rgb(244,189,0)"/>
                     5秒
                 </label>
             </radio-group>
@@ -29,25 +33,25 @@
     <view class="box">
         <view class="section-title">
             驳立论阶段
-            <switch id="config2" class="pull-right" checked bindchange="switchChange" />
+            <switch id="config2" class="pull-right" checked bindchange="switchChange" color="rgb(244,189,0)"/>
         </view>
         <view>
             <text>时间限制（秒）</text>
-            <slider id="config2" bindchange="sliderChange" show-value min="10" max="360" value="{{configs.config2.time}}" />
+            <input type="number" value="{{configs.config2.time}}" bindinput="configInputChage" id="config2" class="inputTime"></input>
         </view>
         <view>
             <text>声音提醒</text>
             <radio-group id="config2" class="voice" bindchange="radioChange">
                 <label>
-                    <radio value="15" checked />
+                    <radio value="15" color="rgb(244,189,0)"/>
                     15秒
                 </label>
                 <label>
-                    <radio value="10" />
+                    <radio value="10" checked="true" color="rgb(244,189,0)"/>
                     10秒
                 </label>
                 <label>
-                    <radio value="5" />
+                    <radio value="5" color="rgb(244,189,0)"/>
                     5秒
                 </label>
             </radio-group>
@@ -56,25 +60,25 @@
     <view class="box">
         <view class="section-title">
             质辩环节
-            <switch id="config3" class="pull-right" checked bindchange="switchChange" />
+            <switch id="config3" class="pull-right" checked bindchange="switchChange" color="rgb(244,189,0)"/>
         </view>
         <view>
             <text>时间限制（秒）</text>
-            <slider id="config3" bindchange="sliderChange" show-value min="10" max="360" value="{{configs.config3.time}}" />
+            <input type="number" value="{{configs.config3.time}}" bindinput="configInputChage" id="config3" class="inputTime"></input>
         </view>
         <view>
             <text>声音提醒</text>
             <radio-group id="config3" class="voice" bindchange="radioChange">
                 <label>
-                    <radio value="15" checked />
+                    <radio value="15" color="rgb(244,189,0)"/>
                     15秒
                 </label>
                 <label>
-                    <radio value="10" />
+                    <radio value="10" checked="true" color="rgb(244,189,0)"/>
                     10秒
                 </label>
                 <label>
-                    <radio value="5" />
+                    <radio value="5" color="rgb(244,189,0)"/>
                     5秒
                 </label>
             </radio-group>
@@ -83,25 +87,25 @@
     <view class="box">
         <view class="section-title">
             自由辩论
-            <switch id="config4" class="pull-right" checked bindchange="switchChange" />
+            <switch id="config4" class="pull-right" checked bindchange="switchChange" color="rgb(244,189,0)"/>
         </view>
         <view>
             <text>时间限制（秒）</text>
-            <slider id="config4" bindchange="sliderChange" show-value min="10" max="360" value="{{configs.config4.time}}" />
+            <input type="number" value="{{configs.config4.time}}" bindinput="configInputChage" id="config4" class="inputTime"></input>
         </view>
         <view>
             <text>声音提醒</text>
             <radio-group id="config4" class="voice" bindchange="radioChange">
                 <label>
-                    <radio value="15" checked />
+                    <radio value="15" color="rgb(244,189,0)"/>
                     15秒
                 </label>
                 <label>
-                    <radio value="10" />
+                    <radio value="10" checked="true" color="rgb(244,189,0)"/>
                     10秒
                 </label>
                 <label>
-                    <radio value="5" />
+                    <radio value="5" color="rgb(244,189,0)"/>
                     5秒
                 </label>
             </radio-group>
@@ -110,25 +114,25 @@
     <view class="box">
         <view class="section-title">
             总结陈词
-            <switch id="config5" class="pull-right" checked bindchange="switchChange" />
+            <switch id="config5" class="pull-right" checked bindchange="switchChange" color="rgb(244,189,0)"/>
         </view>
         <view>
             <text>时间限制（秒）</text>
-            <slider id="config5" bindchange="sliderChange" show-value min="10" max="360" value="{{configs.config5.time}}" />
+            <input type="number" value="{{configs.config5.time}}" bindinput="configInputChage" id="config5" class="inputTime"></input>
         </view>
         <view>
             <text>声音提醒</text>
             <radio-group id="config5" class="voice" bindchange="radioChange">
                 <label>
-                    <radio value="15" checked />
+                    <radio value="15" color="rgb(244,189,0)"/>
                     15秒
                 </label>
                 <label>
-                    <radio value="10" />
+                    <radio value="10" checked="true" color="rgb(244,189,0)"/>
                     10秒
                 </label>
                 <label>
-                    <radio value="5" />
+                    <radio value="5" color="rgb(244,189,0)"/>
                     5秒
                 </label>
             </radio-group>

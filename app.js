@@ -10,6 +10,8 @@ App({
   },
   initConfigs:function(){
     var configs = new Object();
+    
+    configs.title = "";
 
     var config1=new Object();
     config1.id="config1";
@@ -19,7 +21,6 @@ App({
     config1.voice=15;
     config1.desc="一辩开篇立论\n时间:@";
     configs.config1=config1;
-
 
     var config2=new Object();
     config2.id="config2";

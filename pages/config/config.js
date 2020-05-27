@@ -19,5 +19,59 @@ Page({
   },
   onUnload: function () {
     // 页面关闭
+  },
+  switchChange: function (e) {
+    var id = e.target.id;
+    var configs = this.data.configs;
+    var config = configs[id];
+    if (!config) {
+      config = new Object();
+      configs[id] = config;
+    }
+    config.state = e.detail.value;
+    this.setData({ configs: configs });
+    wx.setStorageSync('configs', configs);
+  },
+  sliderChange: function (e) {
+    var id = e.target.id;
+    var configs = this.data.configs;
+    var config = configs[id];
+    if (!config) {
+      config = new Object();
+      configs[id] = config;
+    }
+    config.time = e.detail.value;
+    this.setData({ configs: configs });
+    wx.setStorageSync('configs', configs);
+  },
+  radioChange: function (e) {
+    var id = e.target.id;
+    var configs = this.data.configs;
+    var config = configs[id];
+    if (!config) {
+      config = new Object();
+      configs[id] = config;
+    }
+    config.voice = e.detail.value;
+    this.setData({ configs: configs });
+    wx.setStorageSync('configs', configs);
+  },
+  inputChange: function(e) {
+    var configs = this.data.configs;
+    configs.title = e.detail.value;
+    this.setData({configs: configs});
+    wx.setStorageSync('configs', configs);
+  },
+  configInputChage: function(e) {
+    var id = e.target.id;
+    var configs = this.data.configs;
+    var config = configs[id];
+    if(!config) {
+      config = new Object();
+      configs[id] = config;
+    }
+    config.time = e.detail.value;
+    this.setData({configs: configs});
+    wx.setStorageSync('configs', configs);
   }
 })

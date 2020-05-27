@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/config/config"
+    "pages/config/config",
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,22 +11,22 @@
   },
   "tabBar": {
     "color": "#000",
-    "selectedColor": "#3cc51f",
+    "selectedColor": "#000",
     "borderStyle": "black",
     "backgroundColor": "#fff",
     "list": [
       {
-        "iconPath": "assets/img/time.png",
-        "selectedIconPath": "assets/img/time-1.png",
-        "pagePath": "pages/index/index",
-        "text": "计时"
-      },
-      {
         "iconPath": "assets/img/config.png",
         "selectedIconPath": "assets/img/config-1.png",
         "pagePath": "pages/config/config",
-        "text": "设置"
-      }
+        "text": "赛前准备"
+      },
+      {
+        "iconPath": "assets/img/time.png",
+        "selectedIconPath": "assets/img/time-1.png",
+        "pagePath": "pages/index/index",
+        "text": "比赛开始"
+      } 
     ]
   },
   "sitemapLocation": "sitemap.json"

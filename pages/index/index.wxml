@@ -1,13 +1,26 @@
 <view class="content">
-  <view class="title" bindtap="actionSheetTap">{{title}}</view>
-  <view class="time">
-    <view class="first">{{leftTime}}秒</view>
-    <view class="second">{{rightTime}}秒</view>
+  <view class="title" bindtap="actionSheetTap">{{left}}{{title}}{{right}}</view>
+  <view class="mainTitleImgBox">
+    <image src="../../assets/img/img_1.png" class="mainTitleImg"></image>
+    <image src="../../assets/img/img_1.png" class="mainTitleImg"></image>
+    <image src="../../assets/img/img_1.png" class="mainTitleImg"></image>
+    <image src="../../assets/img/img_1.png" class="mainTitleImg"></image>
+    <image src="../../assets/img/img_1.png" class="mainTitleImg"></image>
+    <image src="../../assets/img/img_1.png" class="mainTitleImg"></image>
   </view>
-  <view class="btnGroup">
-    <button class="btn" bindtap="leftStart">正方发言</button>
-    <button class="btn" bindtap="rightStart">反方发言</button>
+  <view class="mainTitle">{{mainTitle}}</view>
+  
+  <view class="group">
+    <view class="itemBox">
+      <view class="first"><text class="remainTime">{{leftTime}}秒</text></view>
+      <button class="btn" bindtap="leftStart">正方发言</button>
+    </view>
+    <view class="itemBox">
+      <view class="second"><text class="remainTime">{{rightTime}}秒</text></view>
+      <button class="btn" bindtap="rightStart">反方发言</button>
+    </view>
   </view>
+
   <view class="desc">
     <view class="desc-title"><text>规则解读</text></view>
     <view class="desc-content"><text>{{desc}}</text></view>

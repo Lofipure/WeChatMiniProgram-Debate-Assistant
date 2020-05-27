@@ -6,14 +6,29 @@ page{
   height: 80rpx;
   line-height: 80rpx;
 }
+
 .voice{
   margin-top:10px;
   margin-bottom:10px;
 }
+
 .voice label{
   margin-left:10px;
 }
+
 .box {
-  border: 1px solid #B8B8B8;
+  border: 1px solid rgba(0, 0, 0, 0.22);
   padding: 0 10px;
+}
+
+#input-title {
+  border: 1px solid rgba(0, 0, 0, 0.445);
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.inputTime {
+  border: 1px solid rgba(0, 0, 0, 0.445);
+  padding: 5px;
+  margin: 5px 0;
 }
