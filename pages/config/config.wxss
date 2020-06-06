@@ -5,11 +5,15 @@ page{
   font-size: 20px;
   height: 80rpx;
   line-height: 80rpx;
+  font-weight: 600;
+  text-align: center;
 }
 
 .voice{
   margin-top:10px;
   margin-bottom:10px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .voice label{
@@ -19,6 +23,9 @@ page{
 .box {
   border: 1px solid rgba(0, 0, 0, 0.22);
   padding: 0 10px;
+  /* text-align: center; */ 
+  margin-bottom: 10px;
+  border-radius: 5%;
 }
 
 #input-title {
@@ -31,4 +38,5 @@ page{
   border: 1px solid rgba(0, 0, 0, 0.445);
   padding: 5px;
   margin: 5px 0;
+  text-align: center;
 }

@@ -5,8 +5,8 @@
     </view>
     <view class="box">
         <view class="section-title">
-            立论阶段
             <switch id="config1" class="pull-right" checked bindchange="switchChange" color="rgb(244,189,0)"/>
+            立论阶段
         </view>
         <view>
             <text>时间限制（秒）</text>
@@ -32,8 +32,8 @@
     </view>
     <view class="box">
         <view class="section-title">
-            驳立论阶段
             <switch id="config2" class="pull-right" checked bindchange="switchChange" color="rgb(244,189,0)"/>
+            驳立论阶段
         </view>
         <view>
             <text>时间限制（秒）</text>
@@ -59,8 +59,9 @@
     </view>
     <view class="box">
         <view class="section-title">
+        <switch id="config3" class="pull-right" checked bindchange="switchChange" color="rgb(244,189,0)"/>
             质辩环节
-            <switch id="config3" class="pull-right" checked bindchange="switchChange" color="rgb(244,189,0)"/>
+            
         </view>
         <view>
             <text>时间限制（秒）</text>
@@ -86,8 +87,9 @@
     </view>
     <view class="box">
         <view class="section-title">
+        <switch id="config4" class="pull-right" checked bindchange="switchChange" color="rgb(244,189,0)"/>
             自由辩论
-            <switch id="config4" class="pull-right" checked bindchange="switchChange" color="rgb(244,189,0)"/>
+            
         </view>
         <view>
             <text>时间限制（秒）</text>
@@ -113,8 +115,9 @@
     </view>
     <view class="box">
         <view class="section-title">
+        <switch id="config5" class="pull-right" checked bindchange="switchChange" color="rgb(244,189,0)"/>
             总结陈词
-            <switch id="config5" class="pull-right" checked bindchange="switchChange" color="rgb(244,189,0)"/>
+            
         </view>
         <view>
             <text>时间限制（秒）</text>

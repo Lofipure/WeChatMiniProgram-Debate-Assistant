@@ -26,11 +26,11 @@ body {
   text-align: center;
   width: 80%;
   margin: 20px auto;
-  border: #222 solid 1px;
   padding-bottom: 10rpx;
-  font-size: 24px;
+  font-size: 30px;
   margin-top: 0px;
   padding-top: 0px;
+  font-weight: 600;
 }
 
 .group {
@@ -38,23 +38,30 @@ body {
   display: flex;
   justify-content: space-around;
 }
-
+/* @-webkit-keyframes circle{
+            0% {transform:rotate(0deg);}
+            100% {transform:rotate(-360deg);}
+} */
 .first,.second {
   text-align: center;
-  width: 200px;
-  height: 200px;
-  /* border-radius: 142px; */
-  /* border: 1px solid #222; */
+  width: 150px;
+  height: 150px;
+  border: 10px solid red;
+  /* border-left-color:blue;
+  border-right-color:yellow;
+  border-top-color:#04f105;
+  border-radius: 50%;
+  -webkit-animation:circle 15s infinite linear; */
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(https://s1.ax1x.com/2020/05/26/tFfeeI.png);
-  background-size: 100% 100%;
 }
 
 .btn {
   background-color: rgb(255,255, 255);
   border: 1px solid #222;
+  margin-top: 20px;
+  width: 130px;
 }
 
 .title {
@@ -63,23 +70,11 @@ body {
   font: 20px;
   text-align: center;
   line-height: 30px;
-  padding: 10px;
-  border-radius: 3px;
-}
-
-.mainTitleImg {
-  width: 30px;
-  height: 30px;
-  margin: 0;
-  padding: 5px;
-}
-
-.mainTitleImgBox {
-  text-align: center;
-  margin: 0 auto;
+  padding: 10px 0;
 }
 
 .remainTime {
   font-size: 20px;
-  margin-top: -30px;
+  text-align: center;
+  margin: 20px auto;
 }

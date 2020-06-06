@@ -1,23 +1,22 @@
 <view class="content">
-  <view class="title" bindtap="actionSheetTap">{{left}}{{title}}{{right}}</view>
-  <view class="mainTitleImgBox">
-    <image src="../../assets/img/img_1.png" class="mainTitleImg"></image>
-    <image src="../../assets/img/img_1.png" class="mainTitleImg"></image>
-    <image src="../../assets/img/img_1.png" class="mainTitleImg"></image>
-    <image src="../../assets/img/img_1.png" class="mainTitleImg"></image>
-    <image src="../../assets/img/img_1.png" class="mainTitleImg"></image>
-    <image src="../../assets/img/img_1.png" class="mainTitleImg"></image>
-  </view>
   <view class="mainTitle">{{mainTitle}}</view>
-  
+  <view class="title" bindtap="actionSheetTap">{{left}}{{title}}{{right}}</view>
   <view class="group">
     <view class="itemBox">
-      <view class="first"><text class="remainTime">{{leftTime}}秒</text></view>
+      
+      <!-- <view class="first"><text class="remainTime">{{leftTime}}秒</text></view> -->
+      <canvas-ring id="canvasRing" value="{{lp}}" title="剩余时间"></canvas-ring>
+      <view class="remainTime">剩余{{leftTime}}秒</view>
       <button class="btn" bindtap="leftStart">正方发言</button>
+      
     </view>
     <view class="itemBox">
-      <view class="second"><text class="remainTime">{{rightTime}}秒</text></view>
+      
+      <!-- <view class="second"><text class="remainTime">{{rightTime}}秒</text></view> -->
+      <canvas-ring id="canvasRingRight" value="{{rp}}" title="剩余时间"></canvas-ring>
+      <view class="remainTime">剩余{{rightTime}}秒</view>
       <button class="btn" bindtap="rightStart">反方发言</button>
+      
     </view>
   </view>
 
@@ -25,6 +24,8 @@
     <view class="desc-title"><text>规则解读</text></view>
     <view class="desc-content"><text>{{desc}}</text></view>
   </view>
+  <!-- <canvas-ring id="canvasRing" value="{{lp}}" title="剩余"></canvas-ring>
+  <canvas-ring id="canvasRingRight" value="{{rp}}" title="剩余"></canvas-ring> -->
   <!-- 循环播放 -->
   <audio src="{{src}}" action="{{action}}" loop></audio>
   <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
